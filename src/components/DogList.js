@@ -7,7 +7,7 @@ import PropTypes from "prop-types";
 const DogList = (props) => {
   const dogComponents = props.dogData.map((dog) => {
     return (
-      <Dog name={dog.name} caretaker={dog.caretaker} petCount={dog.petCount} />
+      <Dog name={dog.name} favoriteToy={dog.favoriteToy} chipNumber={dog.chipNumber} />
     );
   });
 

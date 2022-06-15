@@ -5,8 +5,8 @@ const Dog = (props) => {
   return (
     <li>
       <h3>{props.name}</h3>
-      <h4>Caretaker: {props.caretaker}</h4>
-      <h4>Pet count: {props.petCount}</h4>
+      <h4>Caretaker: {props.favoriteToy}</h4>
+      <h4>Chip Number: {props.chipNumber}</h4>
       <button>Pet Dog</button>
     </li>
   );
@@ -14,7 +14,7 @@ const Dog = (props) => {
 
 Dog.propTypes = {
   name: PropTypes.string.isRequired,
-  caretaker: PropTypes.string,
+  favoriteToy: PropTypes.string,
   petCount: PropTypes.number,
 };
 
