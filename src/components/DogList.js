@@ -1,9 +1,11 @@
 import React from "react";
 import Dog from "./Dog";
 import "./DogList.css";
+import PropTypes from "prop-types";
+
 
 const DogList = (props) => {
-  const DogComponents = props.dogData.map((dog) => {
+  const dogComponents = props.dogData.map((dog) => {
     return (
       <Dog name={dog.name} caretaker={dog.caretaker} petCount={dog.petCount} />
     );

@@ -23,31 +23,30 @@ function App() {
     },
   ];
 
-  const dog_data = [
+  const dogData = [
     {
       name: "Wishbone",
       favoriteToy: "Squeaker",
-      chipNumber: "82373",
+      chipNumber: 82373,
     },
     {
       name: "Appa",
       favoriteToy: "Ball",
-      chipNumber: "29238",
+      chipNumber: 29238,
     },
     {
       name: "Jimminy",
       favoriteToy: "Bone",
-      chipNumber: "72902",
+      chipNumber: 72902,
     }
   ];
 
   return (
     <main>
       <h1>List of Cats</h1>
-      <Cat />
-      <h1>List of Dogs</h1>
-      <DogList />
       <CatList catData={catData} />
+      <h1>List of Dogs</h1>
+      <DogList dogData={dogData}/>
     </main>
   );
 }
